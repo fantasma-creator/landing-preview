@@ -84,14 +84,10 @@ a:focus-visible,button:focus-visible{
   padding:26px 0;
 }
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand-mark{
+.brand-img{
   width:30px;height:30px;
   border-radius:7px;
-  background:#17171a;
-  border:1px solid #2c2c30;
-  display:grid;place-items:center;
-  font:italic 800 16px/1 var(--font-sans);
-  color:#fff;
+  display:block;
 }
 .brand-name{
   font-family:var(--font-mono);
@@ -349,8 +345,8 @@ h1{
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="https://www.pinnacleoddsdropper.com/">
-      <!-- Recreated mark for the mockup — swap for /icons/pod-192-icon.png in production -->
-      <span class="brand-mark" aria-hidden="true">P</span>
+      <!-- Official icon hotlinked from production — switch to local asset when porting -->
+      <img class="brand-img" src="https://www.pinnacleoddsdropper.com/_next/image?url=%2Ficons%2Fpod-192-icon.png&amp;w=48&amp;q=75" width="30" height="30" alt="">
       <span class="brand-name">Pinnacle Odds Dropper</span>
     </a>
     <div class="announce">
